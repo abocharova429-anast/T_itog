@@ -33,7 +33,7 @@ def display_word(secret_word: str, guessed_letters: set) -> str:
         for letter in secret_word
     )
 
-def play_hangman(words: list, max_attempts: int = 8):   #Осовной цикл игры
+def play_hangman(words: list, max_attempts: int = 10):   #Осовной цикл игры  #увеличены попытки о 10
     # Выбор случайного слова происходит КАЖДЫЙ РАЗ при запуске функции
     secret_word = random.choice(words)
     guessed_letters = set()
